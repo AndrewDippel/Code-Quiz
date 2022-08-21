@@ -1,0 +1,32 @@
+* {
+    background-color: #777;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+
+} h1 {
+    display: flex;
+    justify-content: center;
+} main {
+    padding:25%;
+    text-align: center;
+    width: 50%;
+    margin:auto;
+} nav{
+    height:20%;
+
+} button {
+    background-color: blueviolet;
+    
+} div {
+    float: right;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    padding: 2px;
+    box-shadow: 2px 2px black;
+    font-size:small;
+} #startquiz {
+    padding: 15px 25px;
+    font-size: 25px;
+} li {
+    list-style: none;
+}

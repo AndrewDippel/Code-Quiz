@@ -1,0 +1,1 @@
+var startquiz = document.querySelector(".startquiz");
