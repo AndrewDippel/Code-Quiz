@@ -31,8 +31,6 @@
     font-size: 25px;
 } li {
     list-style: none;
-} /*section {
-    display:none;
-} section2 {
-     display: none;
+} .hide {
+    display: none;
 }
