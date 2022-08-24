@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Code Quiz</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./Assets/styles.css">    
-    </head>
-    <body>
-        <nav>
-            <h1>Coding Quiz</h1>
-            <button id="highscore" type="button">View Highscore</button>
-            <div id="timerElement">Timer:</div>
-        </nav>
-        <main>
-            <section class="intro">
+
+<head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/styles.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Coding Quiz</h1>
+        <button id="highscore" type="button">View Highscore</button>
+        <div id="timerElement">Timer:</div>
+    </nav>
+    <main>
+        <section class="intro">
             <p>
                 Try to answer the following code-related questions within the time limit.
                 keep in mind that incorrect answers will penalize your scoretime by ten seconds!
@@ -22,25 +24,26 @@
             <button id="startQuiz" type="button">Start Quiz</button>
         </section>
 
-            <section1 class="questions">
-                <h2>Question</h2>
-                <ul>
-                    <li><button>Answer</button></li>
-                    <li><button>Answer</button></li>
-                    <li><button>Answer</button></li>
-                    <li><button>Answer</button></li>
-                </ul>
-            </section1>
-            <section2 class="finish">
-                <h3>All Done!</h3>
-                <p>You scored: </p>
-                <label>Enter initials:</label>
-                <input id="initialsInput" type="text"/>
-                <button id="submit">Submit</button>
-            </section2>
+        <section1 class="questions">
+            <h2 class="question">Question</h2>
+            <ul>
+                <li><button>Answer</button></li>
+                <li><button>Answer</button></li>
+                <li><button>Answer</button></li>
+                <li><button>Answer</button></li>
+            </ul>
+        </section1>
+        <section2 class="finish">
+            <h3>All Done!</h3>
+            <p>You scored: </p>
+            <label>Enter initials:</label>
+            <input id="initialsInput" type="text" />
+            <button id="submit">Submit</button>
+        </section2>
 
-        </main>
-        <script src="./Assets/jsvascript.js"></script>
+    </main>
+    <script src="./Assets/jsvascript.js"></script>
 
-    </body>
+</body>
+
 </html>
