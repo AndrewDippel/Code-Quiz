@@ -3,34 +3,52 @@
     font-family: Arial, sans-serif;
     color: aliceblue;
 
-} h1 {
+}
+
+h1 {
     display: flex;
     justify-content: center;
-} main {
-    padding:25%;
+}
+
+main {
+    padding: 25%;
     text-align: center;
     width: 50%;
-    margin:auto;
-} nav{
-    height:20%;
+    margin: auto;
+}
 
-} button {
+nav {
+    height: 20%;
+
+}
+
+button {
     background-color: blueviolet;
-} button:hover {
+}
+
+button:hover {
     color: greenyellow;
-  box-shadow: 0 5px 15px rgb(191, 146, 234);
-} div {
+    box-shadow: 0 5px 15px rgb(191, 146, 234);
+}
+
+div {
     float: right;
     border: 2px solid blueviolet;
     background-color: blueviolet;
     padding: 2px;
     box-shadow: 2px 2px black;
-    font-size:small;
-} #startQuiz {
+    font-size: small;
+}
+
+#startQuiz {
     padding: 15px 25px;
     font-size: 25px;
-} li {
+}
+
+li {
     list-style: none;
-} .hide {
+}
+
+.hide {
     display: none;
 }

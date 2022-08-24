@@ -46,11 +46,10 @@ function startQuiz() {
     }, 1000);
 }
 function generateQuestion() {
-    for (var i = 0; i < questions.length; i++) {
-        startButton.addEventListener("click", pushQuestion() {
-            displayQuestion.push("questions[0]")
-        })
-    } console.log(i);
+    var createQuestion = document.createElement("h2");
+    var questionText = document.createTextNode("questions[0]");
+    createQuestion.appendChild(questionText);
+    Document.displayQuestion.appendChild(createQuestion);
 }
 
 
@@ -63,5 +62,4 @@ function generateQuestion() {
 }
 }*/
 
-
-startButton.addEventListener("click", startQuiz);
+startButton.addEventListener("click", startQuiz, generateQuestion);
