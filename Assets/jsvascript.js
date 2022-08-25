@@ -5,6 +5,7 @@ var displayQuestion = document.getElementsByClassName(".question");
 var input = document.getElementById("initialsInput");
 var printInput = localStorage.getItem("storeInput");
 var submit = document.getElementById("submit");
+var currentQuestionIndex = 0;
 var timerCount = 75;
 var win = false;
 var score = 0;
@@ -46,14 +47,21 @@ function startQuiz() {
             console.log("lost");
         }
     }, 1000);
+
+    generateQuestion();
 }
 //generate question to html using dom manipulation
 function generateQuestion() {
     var currentQuestion = questions[currentQuestionIndex];
+    console.log(currentQuestion);
     var createQuestion = document.createElement("h2");
-    var questionText = document.createTextNode("questions[0]");
-    createQuestion.appendChild(questionText);
-    Document.displayQuestion.appendChild(createQuestion);
+    createQuestion.id = "questionSection";
+    var questionText = document.createTextNode("currentQuestionIndex");
+    document.getElementById('questionSection').innerHTML = 'currentQuestion';
+}
+function generateChoices() {
+    var currentChoices = questions.choices;
+    console.log(currentChoices);
 }
 //stor input from form to be displayed on highscore page
 function storeInput() {
@@ -62,14 +70,4 @@ function storeInput() {
 }
 
 
-//for loop to check if answer is correct and to add to score or if loose minus 10 seconds from time  
-/*for (var i = 0; i < questions.length; i++) {
-    var response = document.
-        if(response == question[i].answer) {
-            score++;
-} else {
-    timerCount - 10;
-}
-}*/
-
-startButton.addEventListener("click", startQuiz, generateQuestion);
+startButton.addEventListener("click", startQuiz);
