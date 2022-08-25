@@ -11,3 +11,4 @@ this is what i managed to get done as the opener screen where you click the star
 i ran into a few challenges this week with getting advice from the wrong sites and mix and matching different techniques to try make it work as well as sevearly stuggling with time management.
 
 to view this project you can follow this link:
+https://andrewdippel.github.io/Code-Quiz/
