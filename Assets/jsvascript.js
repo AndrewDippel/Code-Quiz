@@ -1,6 +1,4 @@
 var startButton = document.getElementById("startQuiz");
-var highscorePage = document.getElementById("highscore");
-var backToGame = document.getElementById("backToGame");
 var submit = document.getElementById("submit");
 var timerElement = document.getElementById("timerElement");
 var displayQuestion = document.getElementsByClassName(".question");
@@ -62,6 +60,7 @@ function storeInput() {
     localStorage.setItem("input", JSON.stringify(input));
     console.log("printInput: ", JSON.parse(printInput));
 }
+
 
 //for loop to check if answer is correct and to add to score or if loose minus 10 seconds from time  
 /*for (var i = 0; i < questions.length; i++) {
