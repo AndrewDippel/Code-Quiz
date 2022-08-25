@@ -1,7 +1,7 @@
 var startButton = document.getElementById("startQuiz");
 var submit = document.getElementById("submit");
 var timerElement = document.getElementById("timerElement");
-var displayQuestion = document.getElementsByClassName(".question");
+var displayQuestion = document.querySelector(".questions");
 var input = document.getElementById("initialsInput");
 var printInput = localStorage.getItem("storeInput");
 var submit = document.getElementById("submit");
@@ -56,13 +56,16 @@ function generateQuestion() {
     console.log(currentQuestion);
     var createQuestion = document.createElement("h2");
     createQuestion.id = "questionSection";
-    var questionText = document.createTextNode("currentQuestionIndex");
-    document.getElementById('questionSection').innerHTML = 'currentQuestion';
+    createQuestion.textContent = currentQuestion.question;
+    displayQuestion.appendChild(createQuestion);
 }
 function generateChoices() {
-    var currentChoices = questions.choices;
-    console.log(currentChoices);
+    currentChoices = document.querySelector(questions.choices);
+    for (let i = 0; i < myNodelist.length; i++) {
+        currentChoices[i].
+};
 }
+
 //stor input from form to be displayed on highscore page
 function storeInput() {
     localStorage.setItem("input", JSON.stringify(input));
