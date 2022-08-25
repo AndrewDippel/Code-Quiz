@@ -2,8 +2,8 @@ var startButton = document.getElementById("startQuiz");
 var submit = document.getElementById("submit");
 var timerElement = document.getElementById("timerElement");
 var displayQuestion = document.querySelector(".questions");
-var input = document.getElementById("#initialsInput");
-var printInput = localStorage.getItem("storeInput");
+var input = document.getElementById("initialsInput");
+var printInput = localStorage.getItem("initials");
 var submit = document.getElementById("submit");
 var currentQuestionIndex = 0;
 //var currentChoices =
@@ -66,13 +66,19 @@ function generateChoices() {
 
 
 //stor input from form to be displayed on highscore page
-function storeInput() {
-    submit.addEventListener('click', function () {
-        var initials = input.val();
-        localStorage.setItem("initials", JSON.stringify(input));
-        console.log(localStorage);
-    })
-};
+submit.addEventListener('click', function () {
+    var initials = input.value;
+    localStorage.setItem("initials", initials);
+    console.log(localStorage);
+});
+
+/*for (var i = 0; i < localStorage.length; i++) {
+    if (localStorage.key(i).indexOf("initials") !== -1) {
+        var item = document.createElement("li");
+        item.textContent = localStorage.getItem(localStorage.key(i));
+        list.appendChild(item);
+    }
+};*/
 
 
 startButton.addEventListener("click", startQuiz);
